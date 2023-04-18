@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import Container, { Antmodal, AntSelect, ConTable, Wrapper } from './style.js'
-import Plus from "../../assets/svg/plus.svg";
+
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllDataFetch, getAllProductFetch } from '@/redux/slice/productGet/index.js';
 import { Spin } from 'antd';
 import { Button } from '../generic/index.jsx';
 import Image from 'next/image.js';
+import { getAllProductFetch } from '../../redux/slice/productGet/index.js';
 
 const data = [
   {

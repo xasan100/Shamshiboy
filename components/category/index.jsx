@@ -3,11 +3,11 @@ import Container, { Antmodal, Content, Wrapper } from './style.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { Spin } from 'antd';
 import { Button, Input } from '../generic/index.jsx';
-import { categoryGetFetch } from '@/redux/slice/category/category/index.js';
 // import AddCategoryCom from './addCategory/index.jsx';
-import AddImg from "../../assets/svg/addimg.jpg"
+import AddImg from "../../assets/svg/addimg.svg"
 import Image from 'next/image.js';
-import { categoryPostFetch } from '@/redux/slice/category/premissionsCreate/create.js';
+import { categoryGetFetch } from '../../redux/slice/category/category/index.js';
+import { permissionsDeleteFetch } from '../../redux/slice/premissions/permissionsDelete/index.js';
 
 const CategoryCom = () => {
 

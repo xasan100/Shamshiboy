@@ -1,5 +1,11 @@
-import RootCom from "../../root"
-const Home = () => <div><RootCom /></div>
+import React from 'react'
+import Root from '../../root/index.jsx'
 
-
-export default Home
+export const HomePage = () => {
+  return (
+      <div>
+          <Root/>
+    </div>
+  )
+}
+export default HomePage

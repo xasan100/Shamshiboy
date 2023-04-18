@@ -29,7 +29,7 @@ export const LoginCom = () => {
 
     useEffect(() => {
         if (loginPost.status === 'success') {
-            quary.push('home')
+            quary.push('/home')
             dispatch(startMessage({ time: 3, message: 'siz muvofiyaqatli `ottingiz', type: 'success' }))
         }
         if (loginPost.status === 'notFound') {

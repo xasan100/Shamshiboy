@@ -4,7 +4,7 @@ import Plus from "../../assets/svg/plus.svg";
 import { useDispatch, useSelector } from 'react-redux';
 import { Spin } from 'antd';
 import { Button } from '../generic/index.jsx';
-import { shopGetFetch } from '@/redux/slice/shop/shopGet/index.js';
+import { shopGetFetch } from '../../redux/slice/shop/shopGet/index.js';
 
 const ShopCom = () => {
 

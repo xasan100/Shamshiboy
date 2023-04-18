@@ -3,11 +3,11 @@ import Container, { Antmodal, AntSelect, ConTable, Wrapper } from './style.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { Spin } from 'antd';
 import { Button, Input } from '../generic/index.jsx';
-import { permissionsGetFetch } from "@/redux/slice/premissions/permissionsGet";
-import { permissionPostFetch, resetperPermissionPost } from '@/redux/slice/premissions/premissionsCreate/create.js';
-import { startMessage } from '@/redux/slice/message/index.js';
-import { permissionsDeleteFetch } from '@/redux/slice/premissions/permissionsDelete/index.js';
-import { permissionPutFetch } from '@/redux/slice/premissions/premissionsPut/update.js';
+import { permissionPostFetch } from '../../redux/slice/premissions/premissionsCreate/create.js';
+import { permissionsGetFetch } from '../../redux/slice/premissions/permissionsGet/index.js';
+import { startMessage } from '../../redux/slice/message/index.js';
+import { permissionsDeleteFetch } from '../../redux/slice/premissions/permissionsDelete/index.js';
+import { permissionPutFetch } from '../../redux/slice/premissions/premissionsPut/update.js';
 const PermissionsCom = () => {
 
   const [data, setData] = useState([])

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import Container, { Antmodal, AntSelect, ConTable, Wrapper } from './style.js'
-import Plus from "../../assets/svg/plus.svg";
 import { useDispatch, useSelector } from 'react-redux';
 import { Alert, Spin } from 'antd';
 import { Button } from '../generic/index.jsx';
-import { ordersGetFetch } from '@/redux/slice/orders/ordersGet/index.js';
+import { ordersGetFetch } from '../../redux/slice/orders/ordersGet/index.js';
+
 const OrdersComp = () => {
 
   const [data, setData] = useState([])

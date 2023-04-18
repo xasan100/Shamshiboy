@@ -3,8 +3,15 @@ import { Menu } from 'antd';
 import Square from "../assets/svg/3d-square 1.svg"
 import Setting from "../assets/svg/discount-shape 1.svg"
 import Container from "./style.js"
+import CategoryCom from '../components/category/index.jsx';
+import ProductsCop from '../components/products/index.jsx';
+import PermissionsCom from '../components/permissions/index.jsx';
+import ShopCom from '../components/shop/index.jsx';
+import RoleComp from '../components/role/index.jsx';
+import OrdersComp from '../components/orders/index.jsx';
+import AdminCom from '../components/admin/AdminStaff/index.jsx';
 
-const RootCom = () => {
+const Root = () => {
     function getItem(label, key, icon, children, type) { return { key, icon, children, label, type, } }
     const [page, setPage] = useState('sub1')
 
@@ -67,4 +74,4 @@ const RootCom = () => {
     )
 }
 
-export default RootCom
+export default Root

@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import Container, { Antmodal, AntSelect, ConTable, Wrapper } from './style.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { Spin } from 'antd';
-import { Button, Input } from '../../generic/index.jsx';
-import { startMessage } from '@/redux/slice/message/index.js';
 import AdminStaff from '../addimg/index.jsx';
-import { adminGetFetch } from '@/redux/slice/admin/adminGet/index.js';
-import { adminDeleteFetch } from '@/redux/slice/admin/adminDelete/index.js';
-import { adminPutFetch } from '@/redux/slice/admin/adminPut/update.js';
+import { startMessage } from '../../../redux/slice/message/index.js';
+import { adminGetFetch } from '../../../redux/slice/admin/adminGet/index.js';
+import { adminDeleteFetch } from '../../../redux/slice/admin/adminDelete/index.js';
+import { adminPutFetch } from '../../../redux/slice/admin/adminPut/update.js';
+import { Button, Input } from '../../Generic/index.jsx';
 
 const AdminCom = () => {
 
@@ -106,7 +106,7 @@ const AdminCom = () => {
                         <tr key={value?._id}>
                           <td>{value._id}</td>
                           <td>{editID === value._id ? (
-                            <Input width={300} height={30} radius={'1px solid red'} value={name.name} onChange={(e) => setName({ ...name, name: e.target.value })} />
+                            <Inputx width={300} height={30} radius={'1px solid red'} value={name.name} onChange={(e) => setName({ ...name, name: e.target.value })} />
                           ) : (
                             value?.name
                           )}</td>

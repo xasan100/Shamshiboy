@@ -1,11 +1,12 @@
 import { Container, Content, Wrapper } from "./stayle.js";
-import { Button, Input } from "@/components/Generic/index.jsx";
 import { useRef, useState } from 'react';
 import PhoneInput from 'react-phone-number-input/input';
-import AddImg from "../../../assets/svg/addimg.jpg"
+import Addimg from "../../../assets/svg/addimg.svg"
 import Image from "next/image.js";
 import { useDispatch } from "react-redux";
-import { adminAddFetch } from "@/redux/slice/admin/adminCreate/create.js";
+import { Input } from "antd";
+import { Button } from "../../Generic/index.jsx";
+import { adminAddFetch } from "../../../redux/slice/admin/adminCreate/create.js";
 export const AdminStaff = () => {
     const dispatch = useDispatch()
 
@@ -74,7 +75,7 @@ export const AdminStaff = () => {
                 // })
                 // )
                 >
-                    {fileList.length < 1 && <Image style={{ width: '100px', height: '100px' }} src={AddImg} alt="img" />}
+                    {fileList.length < 1 && <Image style={{ width: '100px', height: '100px' }} src={Addimg} alt="img" />}
                 </Content.Upload>
             </div>
             <div>

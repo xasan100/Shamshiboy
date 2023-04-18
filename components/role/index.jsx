@@ -3,7 +3,7 @@ import Container, { Antmodal, Wrapper } from './style.js'
 import { useDispatch, useSelector } from 'react-redux';
 import { Spin } from 'antd';
 import { Button } from '../generic/index.jsx';
-import { roleGetFetch } from '@/redux/slice/role/roleGet/index.js';
+import { roleGetFetch } from '../../redux/slice/role/roleGet/index.js';
 
 const RoleComp = () => {
 
